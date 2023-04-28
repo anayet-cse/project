@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_fist_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First year First Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_second_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First year Second Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_third_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year First Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_fourth_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second year Second Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_fifth_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third year First Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_sixth_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third year Second Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_seventh_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourth year First Semester" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_eight_semester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fourth year Second Semester" />
+
+    </LinearLayout>
+</layout>

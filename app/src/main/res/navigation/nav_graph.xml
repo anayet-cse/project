@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_dest">
+
+    <fragment
+        android:id="@+id/login_dest"
+        android:name="com.anayat.resultboard.view.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_dest_to_registration_dest"
+            app:destination="@id/registration_dest" />
+        <action
+            android:id="@+id/action_login_dest_to_semester_list_dest"
+            app:destination="@id/semester_list_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registration_dest"
+        android:name="com.anayat.resultboard.view.registration.RegistrationFragment"
+        android:label="RegistrationFragment" />
+
+    <fragment
+        android:id="@+id/semester_list_dest"
+        android:name="com.anayat.resultboard.view.semesterlist.SemesterListFragment"
+        android:label="SemesterListFragment" >
+        <action
+            android:id="@+id/action_semester_list_dest_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.anayat.resultboard.view.result.ResultFragment"
+        android:label="ResultFragment" />
+
+</navigation>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.anayat.resultboard.view.registration.RegistrationVM" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_FullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:text="@={viewModel.registrationInfo.fullName}"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:text="@={viewModel.registrationInfo.userName}"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:text="@={viewModel.registrationInfo.emailId}"
+            android:layout_marginTop="8dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_Registration_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration No"
+            android:text="@={viewModel.registrationInfo.registrationNo}"
+            android:layout_marginTop="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_Exam_Roll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exam Roll"
+            android:text="@={viewModel.registrationInfo.examRoll}"
+            android:layout_marginTop="8dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text="@={viewModel.registrationInfo.password}"
+            android:layout_marginTop="8dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtInput_Confirm_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:text="@={viewModel.registrationInfo.confirmPassword}"
+            android:layout_marginTop="8dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</layout>
